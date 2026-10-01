@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bonfire"
+  short_description: "프로젝트별 기준을 보존하며 Bonfire 개발 스킬과 초기 문서를 구성합니다"
+  default_prompt: "$bonfire를 사용해 이 프로젝트의 기존 지침을 보존하면서 Bonfire 기본 구성을 적용해줘."
