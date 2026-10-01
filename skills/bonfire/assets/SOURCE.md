@@ -2,8 +2,9 @@
 
 - 원본: https://github.com/shnea/bonfire
 - 기준: Bonfire v1
-- 커밋: ef14ef1be67bd26388ee0e1a80ccd4aa0bc32ee6
+- 커밋: 2f2c2d3d299a6048b2eb29443070604b985ee11c
 - 포함 범위: AGENTS.md와 두 기본 스킬 및 참조 문서
+- 기준 이동: 문서 묶음 형식 v1과 내보내기·가져오기 절차를 포함한다. 같은 프로젝트 복원과 다른 프로젝트 참고용 병합을 구분한다.
 - 설치본의 기준 관리 스킬 이름: golden-path. 스킬 이름 규칙에 맞춰 원본의 golden_path 식별자·폴더명·내부 참조를 함께 정규화했다.
 - 템플릿 진입 파일은 SKILL.md.template로 보관하고, 대상 프로젝트에 배치할 때 SKILL.md로 만든다.
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "Bonfire"
-  short_description: "프로젝트별 기준을 보존하며 Bonfire 개발 스킬과 초기 문서를 구성합니다"
+  short_description: "Bonfire 초기 구성과 프로젝트 기준 내보내기·가져오기를 지원합니다"
   default_prompt: "$bonfire를 사용해 이 프로젝트의 기존 지침을 보존하면서 Bonfire 기본 구성을 적용해줘."
