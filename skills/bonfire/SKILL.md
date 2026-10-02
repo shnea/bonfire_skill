@@ -17,7 +17,7 @@ description: Bonfire를 새 프로젝트나 기존 프로젝트에 도입하고 
 ## 1. 대상과 현재 상태 확인
 
 - 사용자가 지정한 프로젝트를 대상으로 한다. 지정이 없으면 현재 작업 폴더에서 프로젝트 루트를 확인하고, 여러 후보가 있으면 대상만 확인한다.
-- 대상에 적용되는 AGENTS.md와 기존 스킬·문서 구조를 읽는다. 기존 프로젝트의 기술 선택·작업 지침·결정 기록을 우선한다.
+- 대상에 적용되는 AGENTS.md와 기존 스킬·문서 구조를 읽는다. `skills/`와 기존 `.agents/skills/` 경로를 모두 확인한다. 기존 프로젝트의 기술 선택·작업 지침·결정 기록을 우선한다.
 - 이 스킬의 설치 폴더와 대상 프로젝트를 구분한다. 설치 폴더의 원본·템플릿에는 프로젝트별 내용이나 추가 스킬을 기록하지 않는다.
 
 ## 2. 기본 파일 배치
@@ -26,15 +26,15 @@ description: Bonfire를 새 프로젝트나 기존 프로젝트에 도입하고 
 
 | 원본 | 목적지 |
 | --- | --- |
-| assets/template/skills/workflow/SKILL.md.template | .agents/skills/workflow/SKILL.md |
-| assets/template/skills/golden-path/SKILL.md.template | .agents/skills/golden-path/SKILL.md |
-| assets/template/skills/golden-path/references/ | .agents/skills/golden-path/references/ |
+| assets/template/skills/workflow/SKILL.md.template | skills/workflow/SKILL.md |
+| assets/template/skills/golden-path/SKILL.md.template | skills/golden-path/SKILL.md |
+| assets/template/skills/golden-path/references/ | skills/golden-path/references/ |
 | assets/template/AGENTS.md | AGENTS.md |
 
 - 템플릿의 파일 목록을 확인하고 참조 디렉터리는 하위 파일까지 보존한다. 스킬 진입 파일의 `.template` 확장자는 복사할 때 제거한다.
 - 목적지가 비어 있으면 기본 파일을 복사한다. 파일이 같으면 다시 쓰지 않는다.
 - 기존 파일이 다르면 원본으로 덮어쓰지 않고 목적과 내용을 확인한다. 같은 Bonfire 구성의 누락 파일만 보완하고, 다른 스킬이 같은 이름을 사용하거나 구조가 충돌하면 해당 부분을 보류해 충돌과 선택지를 알린다.
-- 기존 core.md, 영역별 기준, skills.md, decisions.md의 프로젝트별 기록을 보존한다. 재실행이나 복구 요청으로 초기화하지 않는다.
+- 기존 core.md, 영역별 기준, skills.md, decisions.md의 프로젝트별 기록을 보존한다. `.agents` 아래에 기존 구성이 있으면 AGENTS.md의 연결을 확인하고 프로젝트 기록을 이동한 뒤 경로를 갱신한다. 이름이나 경로만 다르다고 두 번째 기준 묶음을 만들지 않는다. 재실행이나 복구 요청으로 초기화하지 않는다.
 - 설치 요청으로 추가 전문 스킬이나 실행 의존성을 임의로 설치하지 않는다. 동봉본의 출처는 [SOURCE.md](assets/SOURCE.md)에서 확인할 수 있다.
 
 ## 3. 시작 안내 연결
